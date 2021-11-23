@@ -27,6 +27,10 @@ $(document).ready(function() {
     stickySideBar();
   });
 
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+  });
+
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function() {
     $(".author__urls").toggleClass("is--visible");
