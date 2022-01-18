@@ -17,6 +17,11 @@
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}><i class="{{ link.icon }}" aria-hidden="true"></i></a>
             </li>
           {%- endfor -%}
+          <a href="mailto:{{ site.email }}" rel="me" class="u-email">
+            <meta itemprop="email" content="{{ site.email }}" />
+            <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+            <span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
+          </a>
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
