@@ -25,13 +25,13 @@
 
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-            <!-- <li class="masthead__menu-item">
+            <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}">
                 <i class="{{ link.icon }}" aria-hidden="true"></i></a>
-            </li> -->
+            </li>
           {%- endfor -%}
           
-          <a href="mailto:{{ site.discord.username }}">
+          <!-- <a href="mailto:{{ site.discord.username }}">
             <i class="fab fa-discord" aria-hidden="true"></i>
           </a>
           <a href="mailto:{{ site.twitter.username }}">
@@ -40,7 +40,7 @@
           <a href="mailto:{{ site.email }}" rel="me" class="u-email">
             <meta itemprop="email" content="{{ site.email }}" />
             <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
-          </a>
+          </a> -->
 
         </ul>
         {% if site.search == true %}
