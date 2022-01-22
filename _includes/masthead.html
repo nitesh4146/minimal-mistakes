@@ -11,6 +11,18 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
+        &nbsp; 
+        <a href="mailto:{{ site.discord.username }}">
+          <i class="fab fa-discord" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:{{ site.twitter.username }}">
+          <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:{{ site.email }}" rel="me" class="u-email">
+          <meta itemprop="email" content="{{ site.email }}" />
+          <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+        </a>
+
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <!-- <li class="masthead__menu-item">
@@ -18,7 +30,7 @@
                 <i class="{{ link.icon }}" aria-hidden="true"></i></a>
             </li> -->
           {%- endfor -%}
-
+          
           <a href="mailto:{{ site.discord.username }}">
             <i class="fab fa-discord" aria-hidden="true"></i>
           </a>
@@ -29,6 +41,7 @@
             <meta itemprop="email" content="{{ site.email }}" />
             <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
           </a>
+
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
