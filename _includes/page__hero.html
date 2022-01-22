@@ -45,6 +45,17 @@
           <a href="{{ action.url | relative_url }}" class="btn btn--light-outline btn--large">{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
         {% endfor %}
       {% endif %}
+      <p>Follow us on:
+        <a href="mailto:{{ site.discord.username }}">
+          <i class="fab fa-discord" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:{{ site.twitter.username }}">
+          <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:{{ site.email }}" rel="me" class="u-email">
+          <meta itemprop="email" content="{{ site.email }}" />
+          <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+        </a>
     </div>
   {% else %}
     <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
