@@ -22,21 +22,21 @@
             </li>
           {%- endfor -%}
           <li>
-            <div class="flex-container" style="justify-content: center;display:inline-flex; ">
+            <div class="flex-container" style="justify-content: center;display:inline-flex; flex-direction: row;">
               <a href="mailto:{{ site.discord.username }}">
                 <i class="fab fa-discord" aria-hidden="true"></i>
               </a>
               <a href="mailto:{{ site.twitter.username }}">
                 <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
               </a>
+              <a href="mailto:{{ site.email }}" rel="me" class="u-email">Email us
+                <meta itemprop="email" content="{{ site.email }}" />
+                <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+              </a> 
             </div>
           </li>
           
           
-          <!-- <a href="mailto:{{ site.email }}" rel="me" class="u-email">Email us
-            <meta itemprop="email" content="{{ site.email }}" />
-            <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
-          </a>  -->
 
         </ul>
         {% if site.search == true %}
