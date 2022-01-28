@@ -365,7 +365,7 @@ input[type="submit"],
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
   .flex-container {
     flex-direction: column;
   }
