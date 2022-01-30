@@ -363,7 +363,7 @@ input[type="submit"],
 .flex-container {
   // max-width: 1200px;
   margin: 0 auto;
-  display: grid;
+  display: grid inline-flex; 
   grid-gap: 1rem;
 }
 
