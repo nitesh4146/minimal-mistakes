@@ -359,9 +359,16 @@ input[type="submit"],
 }
 
 
+/* Container for flexboxes */
 .flex-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.flex-child {
+  flex: 25%;
+  padding: 10px;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
