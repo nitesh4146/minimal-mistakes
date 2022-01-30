@@ -363,7 +363,7 @@ input[type="submit"],
 .flex-container {
   // max-width: 1200px;
   margin: 0 auto;
-  display: grid inline-flex; 
+  display: grid; 
   grid-gap: 1rem;
 }
 
@@ -371,6 +371,7 @@ input[type="submit"],
 .flex-child {
   flex: 1;
   padding: 10px;
+  margin:0 auto;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
