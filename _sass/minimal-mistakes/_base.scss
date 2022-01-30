@@ -370,6 +370,11 @@ input[type="submit"],
     flex-direction: column;
   }
 }
+@media (max-width: 700px) {
+  .flex-child {
+    flex: 50%;
+  }
+}
 
 
 
