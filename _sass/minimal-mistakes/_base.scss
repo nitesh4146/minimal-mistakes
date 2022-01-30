@@ -377,7 +377,11 @@ input[type="submit"],
 }
 
 /* Screen larger than 900px? 3 columns */
-@media (min-width: 900px) {
+@media (min-width: 940px) {
+  .flex-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1260px) {
   .flex-container { grid-template-columns: repeat(4, 1fr); }
 }
 
