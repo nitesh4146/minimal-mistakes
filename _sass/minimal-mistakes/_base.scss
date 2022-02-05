@@ -600,7 +600,7 @@ input:checked {
 }
 
 .table-styled caption {
-  font-size: 1.5em;
+  // font-size: 1.5em;
   margin: .5em 0 .75em;
 }
 
@@ -617,8 +617,8 @@ input:checked {
 }
 
 .table-styled th {
-  font-size: .85em;
-  letter-spacing: .1em;
+  // font-size: .85em;
+  // letter-spacing: .1em;
   text-transform: uppercase;
 }
 
@@ -627,9 +627,9 @@ input:checked {
     border: 0;
   }
 
-  .table-styled caption {
-    font-size: 1.3em;
-  }
+  // .table-styled caption {
+  //   font-size: 1.3em;
+  // }
   
   .table-styled thead {
     border: none;
@@ -651,7 +651,7 @@ input:checked {
   .table-styled td {
     border-bottom: 1px solid #ddd;
     display: block;
-    font-size: .8em;
+    // font-size: .8em;
     text-align: right;
   }
   
