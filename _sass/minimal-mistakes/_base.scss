@@ -632,6 +632,8 @@ input:checked {
   // }
   
   .table-styled thead {
+    background-color: #0d263f;
+    color: #ffffff;
     border: none;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -641,7 +643,7 @@ input:checked {
     position: absolute;
     width: 1px;
   }
-  
+
   .table-styled tr {
     border-bottom: 3px solid #ddd;
     display: block;
