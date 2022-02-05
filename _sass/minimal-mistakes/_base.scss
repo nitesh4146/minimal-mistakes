@@ -659,7 +659,7 @@ input:checked {
     border-bottom: 1px solid #ddd;
     display: block;
     // font-size: .8em;
-    text-align: right;
+    text-align: left;
   }
   
   .table-styled td::before {
@@ -671,9 +671,11 @@ input:checked {
     float: left;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: right;
   }
   
   .table-styled td:last-child {
     border-bottom: 0;
+    text-align: right;
   }
 }
